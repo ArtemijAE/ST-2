@@ -125,11 +125,11 @@ TEST(CircleTest, ConsistencyAfterMultipleSets) {
     c.setRadius(2.0);
     c.setFerence(20.0);
     c.setArea(100.0);
-    
+
     double r = c.getRadius();
     double f = c.getFerence();
     double a = c.getArea();
-    
+
     EXPECT_NEAR(f, 2 * PI * r, EPS);
     EXPECT_NEAR(a, PI * r * r, EPS);
 }
@@ -159,24 +159,24 @@ TEST(PoolCostTest, CostPositive) {
 TEST(PoolCostTest, PathArea) {
     double poolRadius = 3.0;
     double pathWidth = 1.0;
-    
+
     Circle pool(poolRadius);
     Circle poolWithPath(poolRadius + pathWidth);
-    
+
     double pathArea = poolWithPath.getArea() - pool.getArea();
     double expectedPathArea = PI * (4.0*4.0 - 3.0*3.0);
-    
+
     EXPECT_NEAR(pathArea, expectedPathArea, EPS);
 }
 
 TEST(PoolCostTest, FenceLength) {
     double poolRadius = 3.0;
     double pathWidth = 1.0;
-    
+
     Circle poolWithPath(poolRadius + pathWidth);
     double fenceLength = poolWithPath.getFerence();
     double expectedFenceLength = 2 * PI * 4.0;
-    
+
     EXPECT_NEAR(fenceLength, expectedFenceLength, EPS);
 }
 
