@@ -1,0 +1,8 @@
+D:/TestPO/ST-2/build/CMakeFiles/INSTALL.dir
+D:/TestPO/ST-2/build/CMakeFiles/ALL_BUILD.dir
+D:/TestPO/ST-2/build/CMakeFiles/ZERO_CHECK.dir
+D:/TestPO/ST-2/build/src/CMakeFiles/ST-2.dir
+D:/TestPO/ST-2/build/src/CMakeFiles/ST-2.info.dir
+D:/TestPO/ST-2/build/src/CMakeFiles/INSTALL.dir
+D:/TestPO/ST-2/build/test/CMakeFiles/ST-2.test.dir
+D:/TestPO/ST-2/build/test/CMakeFiles/INSTALL.dir
